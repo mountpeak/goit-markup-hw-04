@@ -72,7 +72,11 @@ body {
 .adress {
   font-style: normal;
 }
-
+.position-icon::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 /* ======================================Header========================================== */
 .page-header {
   padding-top: 24px;
@@ -161,7 +165,6 @@ body {
 /* ======================================Hero========================================== */
 
 .hero {
-  background-color: var(--background-color-navy);
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -177,6 +180,21 @@ body {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 48px;
+}
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ .jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .type-button {
   min-width: 169px;
@@ -219,6 +237,30 @@ body {
 
 .title-list:not(:last-child) {
   margin-right: 24px;
+}
+.title-list::before {
+  display: block;
+  content: "";
+  height: 112px;
+  background-color: var(--background-color-cloud);
+ 
+  margin-bottom: 8px;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna\ .svg);
+  background-size: 64px;
+}
+.icon-clock::before {
+  background-image: url(../images/clock\ .svg);
+  background-size: 64px;
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram\ .svg);
+  background-size: 64px;
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ .svg);
+ background-size: 64px;
 }
 
 .title {
