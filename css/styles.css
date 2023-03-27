@@ -72,11 +72,7 @@ body {
 .adress {
   font-style: normal;
 }
-.position-icon::before {
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
+
 /* ======================================Header========================================== */
 .page-header {
   padding-top: 24px;
@@ -227,40 +223,25 @@ body {
 .task-list {
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-wrap: wrap;
 }
+.font-task {
+  display: flex;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--background-color-cloud);
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
 .title-list {
   width: calc((100% - 72px) / 4);
 }
 
 .title-list:not(:last-child) {
   margin-right: 24px;
-}
-.title-list::before {
-  display: block;
-  content: "";
-  height: 112px;
-  background-color: var(--background-color-cloud);
- 
-  margin-bottom: 8px;
-}
-.icon-antenna::before {
-  background-image: url(../images/antenna\ .svg);
-  background-size: 64px;
-}
-.icon-clock::before {
-  background-image: url(../images/clock\ .svg);
-  background-size: 64px;
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram\ .svg);
-  background-size: 64px;
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ .svg);
- background-size: 64px;
 }
 
 .title {
@@ -276,8 +257,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.descr-title {
-  margin-top: 8px;
+.title {
+  margin-bottom: 8px;
+}
+.description-title {
+  margin-bottom: 8px;
+}
+.name-title {
+  margin-bottom: 8px;
 }
 .container > .descr-title-light {
   margin-top: 16px;
@@ -321,8 +308,30 @@ body {
 .team-list:not(:last-child) {
   margin-right: 24px;
 }
+
+.team-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button-iris);
+}
+.link-icon {
+  fill: var(--background-color-cloud);
+}
+.team-icon-link:hover {
+  background-color: var(--accent-color);
+}
+
 .employees-card {
-  padding: 16px 32px;
+  padding: 32px 16px;
 }
 .name-title {
   font-weight: 500;

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- =======================Header================ -->
-
+  <body>
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
@@ -57,16 +57,14 @@
           </address>
         </div>
       </div>
-    </header>                   
+    </header>
     <main>
       <!--===================== Section hero ============-->
-       <div class="overlay">
-      <section class="hero">
+
+      <section class="hero overlay">
         <div class="container hero-container">
-         
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="type-button">Order Service</button>
-        </div>
         </div>
       </section>
       <!-- =================Section task and goals============= -->
@@ -74,34 +72,63 @@
         <div class="container task-container">
           <h2 class="secondary-title" hidden>Tasks and goals</h2>
 
-          <ul class="task-list list ">
+          <ul class="task-list list">
             <li class="title-list icon-antenna position-icon">
-              <h3 class="title">Strategy</h3>
-              <p class="descr-title descr-title-dark">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+              <a class="task-link-box link" href="">
+                <div class="font-task">
+                  <svg class="task-icon" width="64" height="64">
+                    <use href="./images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="title">Strategy</h3>
+                <p class="descr-title descr-title-dark">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </a>
             </li>
-            <li class="title-list icon-clock position-icon">
-              <h3 class="title">Punctuality</h3>
-              <p class="descr-title descr-title-dark">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+
+            <li class="title-list icon-antenna position-icon">
+              <a class="task-link-box link" href="">
+                <div class="font-task">
+                  <svg class="task-icon" width="64" height="64">
+                    <use href="./images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="title">Punctuality</h3>
+                <p class="descr-title descr-title-dark">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </a>
             </li>
-            <li class="title-list icon-diagram position-icon">
-              <h3 class="title">Diligence</h3>
-              <p class="descr-title descr-title-dark">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+            <li class="title-list icon-antenna position-icon">
+              <a class="task-link-box link" href="">
+                <div class="font-task">
+                  <svg class="task-icon" width="64" height="64">
+                    <use href="./images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="title">Diligence</h3>
+                <p class="descr-title descr-title-dark">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </a>
             </li>
-            <li class="title-list icon-astronaut position-icon">
-              <h3 class="title">Technologies</h3>
-              <p class="descr-title descr-title-dark">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+            <li class="title-list icon-antenna position-icon">
+              <a class="task-link-box link" href="">
+                <div class="font-task">
+                  <svg class="task-icon" width="64" height="64">
+                    <use href="./images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="title">Technologies</h3>
+                <p class="descr-title descr-title-dark">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </a>
             </li>
           </ul>
         </div>
@@ -136,14 +163,78 @@
               />
               <div class="employees-card">
                 <h3 class="name-title">Mark Guerrero</h3>
-                <p class="descr-title descr-title-dark">Product Designer</p>
+                <p class="description-title descr-title-dark">
+                  Product Designer
+                </p>
+                <ul class="team-icon-list list">
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list">
               <img src="./images//tom-ford.jpg" alt="tom ford" width="264" />
               <div class="employees-card">
                 <h3 class="name-title">Tom Ford</h3>
-                <p class="descr-title descr-title-dark">Frontend Developer</p>
+                <p class="description-title descr-title-dark">
+                  Frontend Developer
+                </p>
+                <ul class="team-icon-list list">
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list">
@@ -154,7 +245,37 @@
               />
               <div class="employees-card">
                 <h3 class="name-title">Camila Garcia</h3>
-                <p class="descr-title descr-title-dark">Marketing</p>
+                <p class="description-title descr-title-dark">Marketing</p>
+                <ul class="team-icon-list list">
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-list">
@@ -165,7 +286,37 @@
               />
               <div class="employees-card">
                 <h3 class="name-title">Daniel Wilson</h3>
-                <p class="descr-title descr-title-dark">UI Designer</p>
+                <p class="description-title descr-title-dark">UI Designer</p>
+                <ul class="team-icon-list list">
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list-item">
+                    <a class="team-icon-link" href="">
+                      <svg class="link-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
