@@ -14,6 +14,7 @@
   --cloud: #f4f4fd;
   --button-iris: #4d5ae5;
   --customer-border: #8e8f99;
+  --hover-green:#31D0AA;
 }
 
 h1,
@@ -126,7 +127,6 @@ body {
   color: var(--secondary-text-color);
 }
 .web-logo {
-  display: ;
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -270,6 +270,7 @@ body {
   margin-bottom: 8px;
 }
 .container > .descr-title-light {
+  
   margin-top: 16px;
   width: 264px;
 }
@@ -387,6 +388,49 @@ body {
 }
 .studio-logo-light {
   color: var(--cloud);
+}
+/* =========================================Social media============================= */
+
+.sub-footer {
+  margin: 0 auto;
+}
+
+.foot-subtext {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.icon-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button-iris);
+}
+.link-icon {
+  fill: var(--background-color-cloud);
+}
+.social-icon-link:hover {
+  background-color: var(--hover-green);
 }
 
 /* <!-- ==================Portfolio ==================--> */
